@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="Exercici1.js"></script>
+    <script defer src="Exercici2.js"></script>
+</head>
+<body id = "body">
+    <h1>Maria Monpeat</h1>
+    <p> Nam gravida maximus turpis. Nulla facilisi. Proin non tortor eu diam posuere pretium. Curabitur hendrerit eleifend justo ut tincidunt. 
+        Cras a leo accumsan, malesuada tellus sed, tristique nisi. Suspendisse porta, magna ac facilisis dignissim, tortor massa sagittis sem, at tincidunt orci ex vitae leo. 
+        Nullam ullamcorper pretium justo, quis blandit libero lacinia a. </p>
+    <div>
+    <!--Els botons no funcionen amb onclick es canvia per darrere-->
+    <button id = "b1">Light</button>
+    <button id = "b2">Dark</button>
+    <button id = "b3">Random</button>
+    <br>
+    <button id="most " onclick="mostrar()"> mostrar</button>
+    </div> 
+    <div id="cookies">
+        <h2> Acceptes cookies? </h2>
+        <button id="cookies1" color="green"> Si </button>
+        <button id="cookies2" > No </button>
+        <button id="cookies3" > Natejar </button>
+        <button id="cookies4" > Tancar </button>
+    </div>
+    <style>
+    body {
+        margin: 0;
+    }
+    #cookies {
+        display: flex;
+        width: 100%;
+        padding: 1rem;
+        background: paleturquoise;
+        gap: 0.5rem;
+        position: fixed;
+        bottom: 0;
+        transition: all .5s;
+    }
+
+    #cookies.hidden {
+        bottom: -100px;
+    }
+    </style>
+</body>
+</html>
